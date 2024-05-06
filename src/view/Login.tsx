@@ -9,6 +9,7 @@ import { createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword } f
 
 
 
+
 export const Login = ({navigation}) => {
     const [login, setLogin] = useState(new LoginModel());
     const [showAlert, setShowAlert] = useState(false);
@@ -81,7 +82,7 @@ export const Login = ({navigation}) => {
                 <Text style={commons.label}>Password:</Text>
                 <TextInput
                     style={commons.input}
-                    value={login.email}
+                    value={login.password}
                     onChangeText={handlePassword}
                     secureTextEntry={true}
                 
